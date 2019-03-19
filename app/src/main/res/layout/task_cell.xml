@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:layout_marginEnd="@dimen/padding_extra_large"
+              android:drawableStart="@drawable/ic_delete"
+              android:textSize="@dimen/accent_text_size"
+              android:textStyle="bold"
+              android:textColor="@android:color/white"
+              android:text="@string/delete"
+              tools:ignore="RelativeOverlap"/>
+
+
+    <RelativeLayout android:id="@+id/foreground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/padding_large">
+
+        <ImageView android:id="@+id/img_forward"
+                   android:layout_width="@dimen/icon"
+                   android:layout_height="@dimen/icon"
+                   android:layout_alignParentEnd="true"
+                   android:layout_centerVertical="true"
+                   android:contentDescription="@null"
+                   android:tint="@android:color/darker_gray"
+                   android:src="@drawable/ic_forward"/>
+
+        <TextView android:id="@+id/tv_title"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/padding"
+                  android:layout_toStartOf="@+id/img_forward"
+                  android:textSize="@dimen/accent_text_size"
+                  android:singleLine="true"
+                  android:ellipsize="end"
+                  tools:text="Meeting with clients for discussing a new project"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tv_title"
+                      android:layout_toStartOf="@id/img_forward"
+                      android:orientation="horizontal"
+                      android:baselineAligned="false">
+
+            <LinearLayout android:layout_weight="4"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal">
+
+                <TextView android:id="@+id/tv_due_title"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:text="@string/due_to"/>
+
+                <TextView android:id="@+id/tv_due_value"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="@dimen/padding"
+                          android:gravity="start|center_vertical"
+                          tools:text="02/19/19"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_weight="3"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          tools:ignore="UseCompoundDrawables">
+
+                <ImageView android:id="@+id/img_priority"
+                           android:layout_width="@dimen/icon_small"
+                           android:layout_height="@dimen/icon_small"
+                           android:tint="@android:color/darker_gray"
+                           android:src="@drawable/ic_priority"
+                           android:contentDescription="@null"/>
+
+                <TextView android:id="@+id/tv_priority"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingEnd="@dimen/padding_macro"
+                          android:gravity="center_vertical"
+                          android:drawableTint="@android:color/darker_gray"
+                          android:text="@string/none"
+                          tools:ignore="RtlSymmetry"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

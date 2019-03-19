@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">Test</string>
+
+    <string name="logout">Logout</string>
+    <string name="sign_in">Sign in</string>
+    <string name="login_register">Login / Register</string>
+    <string name="upper_case_login">LOG IN</string>
+    <string name="upper_case_register">REGISTER</string>
+    <string name="mail_hint">E-mail</string>
+    <string name="pass_hint">Password</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="invalid_pass">Invalid password</string>
+    <string name="invalid_credentials">Wrong email or password</string>
+    <string name="unexpected_login_error">Unexpected login error</string>
+    <string name="internet_unavailable">Internet connection unavailable</string>
+    <string name="email_exists">Email address already exist</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="priority">Priority</string>
+    <string name="due_by">Due by</string>
+
+    <string name="task_title_input_key">task_title</string>
+    <string name="task_date_input_key">task_date</string>
+    <string name="task_time_input_key">task_time</string>
+    <string name="task_priority_input_key">task_priority</string>
+    <string name="task_due_by_input_key">task_due_by</string>
+    <string name="task_priority_low_key">priority_low</string>
+    <string name="task_priority_normal_key">priority_normal</string>
+    <string name="task_priority_high_key">priority_high</string>
+
+    <string name="title">Title</string>
+    <string name="provide_description">Provide a description</string>
+    <string name="set_advance">Set advance</string>
+    <string name="none">None</string>
+    <string name="low">Low</string>
+    <string name="normal">Normal</string>
+    <string name="high">High</string>
+    <string name="delete">DELETE</string>
+    <string name="due_to">Due to:</string>
+    <string name="minutes">Minutes</string>
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="set_title">Please set a valid title value</string>
+    <string name="set_date">Please set a valid date value</string>
+    <string name="set_time">Please set a valid time value</string>
+    <string name="set_due_by">Please set a valid due by value</string>
+
+    <string name="sync_error">Sync error</string>
+    <string name="unexpected_error">Oops! Something went wrong</string>
+
+</resources>

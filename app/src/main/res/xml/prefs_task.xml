@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Common">
+
+        <EditTextPreference
+                android:key="@string/task_title_input_key"
+                android:title="@string/title"
+                android:icon="@drawable/ic_title"
+                android:summary="@string/provide_description"/>
+
+        <DatePickerPreference
+                android:key="@string/task_date_input_key"
+                android:title="@string/date"
+                android:icon="@drawable/ic_date"/>
+
+        <TimePickerPreference
+                android:key="@string/task_time_input_key"
+                android:title="@string/time"
+                android:icon="@drawable/ic_time"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Priority">
+
+        <SwitchPreference android:key="@string/task_priority_high_key"
+                          android:title="@string/high"
+                          android:icon="@drawable/ic_priority"/>
+
+        <SwitchPreference android:key="@string/task_priority_normal_key"
+                          android:title="@string/normal"
+                          android:icon="@drawable/ic_priority"/>
+
+        <SwitchPreference android:key="@string/task_priority_low_key"
+                          android:title="@string/low"
+                          android:icon="@drawable/ic_priority"/>
+
+    </PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

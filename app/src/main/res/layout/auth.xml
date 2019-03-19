@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/root"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:indeterminate="true"
+            android:indeterminateTint="?attr/colorAccent"
+            android:max="100"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:paddingStart="@dimen/padding_extra_large"
+                  android:paddingEnd="@dimen/padding_extra_large"
+                  android:paddingTop="@dimen/padding"
+                  android:paddingBottom="@dimen/padding">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/sign_in"
+                  android:textSize="@dimen/accent_text_size"
+                  android:textStyle="bold"
+                  android:layout_marginBottom="@dimen/padding_large"/>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_email"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/input_email"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/mail_hint"
+                      android:imeOptions="actionDone"
+                      android:inputType="textEmailAddress"
+                      tools:ignore="Autofill"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_pass"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/input_pass"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/pass_hint"
+                      android:inputType="textPassword"
+                      android:imeOptions="actionDone"
+                      android:layout_marginBottom="@dimen/padding"
+                      tools:ignore="Autofill"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Switch android:id="@+id/input_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_register"
+                android:layout_marginBottom="@dimen/padding_extra_large"/>
+
+        <Button android:id="@+id/btn_accept"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upper_case_login"
+                android:layout_margin="@dimen/padding_large"
+                android:textColor="?attr/colorAccent"
+                android:textSize="@dimen/accent_text_size"/>
+
+    </LinearLayout>
+
+</FrameLayout>
